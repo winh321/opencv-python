@@ -1,0 +1,20 @@
+import cv2
+
+img = cv2.imread("img.png")
+cv2.imshow("output",img)
+cv2.waitKey(5000)
+
+****************
+
+import cv2
+
+cap= cv2.VideoCapture("video.mp4")
+
+while True:
+    _,img = cap.read()
+    cv2.imshow("Video",img)
+    if cv2.waitKey(10) & 0xFF == ord('q'):
+        break
+        
+        
+****************
